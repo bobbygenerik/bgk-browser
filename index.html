@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
-  <title>My Custom Browser</title>
+  <title>BGK Browser</title>
   <style>
     body {
       margin: 0;
@@ -12,6 +13,7 @@
       height: 100vh;
       font-family: sans-serif;
     }
+
     #controls {
       display: flex;
       padding: 10px;
@@ -19,22 +21,26 @@
       border-bottom: 1px solid #ccc;
       align-items: center;
     }
+
     #controls button {
       margin-right: 5px;
       padding: 5px 10px;
     }
+
     #url-input {
       flex-grow: 1;
       padding: 5px;
       margin-left: 5px;
       margin-right: 5px;
     }
+
     webview {
       flex-grow: 1;
       border: none;
     }
   </style>
 </head>
+
 <body>
   <div id="controls">
     <button id="back">Back</button>
@@ -46,4 +52,5 @@
   <webview id="view" src="https://www.google.com"></webview>
   <script src="renderer.js"></script>
 </body>
+
 </html>
